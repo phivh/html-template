@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------------
+	BoxModel change
+-------------------------------------------------------------------*/
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* ------------------------------------------------------------------
+	Reset styles
+-------------------------------------------------------------------*/
+html {
+	overflow-x:hidden;
+	background:#FFF;
+}
+body {
+	overflow-x:hidden;
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	word-wrap:break-word;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas {
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, menu { display:block; }
+audio:not([controls]) {
+	display:none;
+	height:0;
+}
+[hidden] { display:none; }
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+ul, ol, menu { list-style:none; }
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before, q:after { content:''; }
+abbr, acronym {
+	border:none;
+	font-variant:normal;
+}
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+legend { color:#000; }
+a img, map a { border:none; }
+a:hover, a:active, a:focus { outline:0; }
+embed { width:100%; }
+audio, canvas, video { display:inline-block; }
+audio:not([controls]) {
+	display:none;
+	height:0;
+}
+img, object, embed {
+	max-width:100%;
+	height:auto;
+}
+object, embed { height:100%; }
+img {
+	-ms-interpolation-mode:bicubic;
+}
+
+/* General styles
+-------------------------------------------------------------------*/
+table { empty-cells:show; }
+input { line-height:1; }
+form img, input, select { vertical-align:middle; }
+textarea { resize:none; }
+legend { display:none; }
+input[type="text"], input[type="password"], textarea {
+	font-size:13px;
+}
+.clearfix { zoom:1; }
+.clearfix:after {
+	display:block;
+	clear:both;
+	content:"";
+}
+.clear { clear:both !important; }
+a.hover:hover,
+input.hover:hover {
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+/* ------------------------------------------------------------------
+	CSS3 common styles
+-------------------------------------------------------------------*/
+.boxShadow {
+	-webkit-box-shadow:0 0 5px #DDD;
+	box-shadow:0 0 5px #DDD;
+	behavior:url(/htc/PIE.php);
+}
+.textShadowW {
+	text-shadow:0 1px 0 #E7E7E7;
+	-ms-filter:"progid:DXImageTransform.Microsoft.DropShadow(color=#E7E7E7,offx=0,offy=1)";
+}
+.textShadowB {
+	text-shadow:0 1px 0 #111;
+	-ms-filter:"progid:DXImageTransform.Microsoft.DropShadow(color=#111111,offx=0,offy=1)";
+}
+.radius5 {
+	border-radius:5px;
+	behavior:url(/htc/PIE.php);
+}
+.radius10 {
+	border-radius:10px;
+	behavior:url(/htc/PIE.php);
+}
+
+/*-----------------------------------------------------------
+Link
+------------------------------------------------------------*/
+a:link {
+  color:#444;
+  text-decoration:none;
+  }
+a:visited {
+  color:#444;
+  text-decoration:none;
+  }
+/*a:hover {
+  color:#aaa;
+  text-decoration:none;
+  -moz-transition: all 0.26s ease-out;
+  -o-transition: all 0.26s ease-out;
+  -webkit-transition: all 0.26s ease-out;
+  -ms-transition: all 0.26s ease-out;
+}*/
+a:active {
+  color:#64AB18;
+  text-decoration:none;
+  }
+/*-----------------------------------------------------------
+margin
+------------------------------------------------------------*/
+.t0b5 { margin:0 0 5px 0; overflow:hidden; }
+.t0b10 { margin:0 0 10px 0; overflow:hidden; }
+.t0b15 { margin:0 0 15px 0; overflow:hidden; }
+.t0b20 { margin:0 0 20px 0; overflow:hidden; }
+.t0b25 { margin:0 0 25px 0; overflow:hidden; }
+.t0b30 { margin:0 0 30px 0; overflow:hidden; }
+.t0b35 { margin:0 0 35px 0; overflow:hidden; }
+.t0b40 { margin:0 0 40px 0; overflow:hidden; }
+.t0b45 { margin:0 0 45px 0; overflow:hidden; }
+.t0b50 { margin:0 0 50px 0; overflow:hidden; }
+.t0b55 { margin:0 0 55px 0; overflow:hidden; }
+.t0b60 { margin:0 0 60px 0; overflow:hidden; }
+
+.t5b0 { margin:5px 0 0 0; overflow:hidden; }
+.t5b10 { margin:5px 0 10px 0; overflow:hidden; }
+.t5b20 { margin:5px 0 20px 0; overflow:hidden; }
+.t5b30 { margin:5px 0 30px 0; overflow:hidden; }
+
+.t10b0 { margin:10px 0 0 0; overflow:hidden; }
+.t10b10 { margin:10px 0; overflow:hidden; }
+.t10b20 { margin:10px 0 20px 0; overflow:hidden; }
+.t10b30 { margin:10px 0 30px 0; overflow:hidden; }
+
+.t20b0 { margin:20px 0 0 0; overflow:hidden; }
+.t20b5 { margin:20px 0 5px 0; overflow:hidden; }
+.t20b10 { margin:20px 0 10px 0; overflow:hidden; }
+.t20b20 { margin:20px 0; overflow:hidden; }
+
+.t30b0 { margin:30px 0 0 0; overflow:hidden; }
+.t30b5 { margin:30px 0 5px 0; overflow:hidden; }
+.t30b10 { margin:30px 0 10px 0; overflow:hidden; }
+.t30b20 { margin:30px 0 20px 0; overflow:hidden; }
+.t30b30 { margin:30px 0; overflow:hidden; }
+
+.mt10{ margin-top: 10px; }
+.mt20{ margin-top: 20px; }
+.mt30{ margin-top: 30px; }
+.mt40{ margin-top: 40px; }
+.mt50{ margin-top: 50px; }
+
+.mb10{ margin-bottom: 10px; }
+.mb20{ margin-bottom: 20px; }
+.mb30{ margin-bottom: 30px; }
+.mb40{ margin-bottom: 40px; }
+.mb50{ margin-bottom: 50px; }
+.mb60{ margin-bottom: 60px; }
+.mb65{ margin-bottom: 65px; }
+.mb70{ margin-bottom: 70px; }
+.mb75{ margin-bottom: 75px; }
+.mb80{ margin-bottom: 80px; }
+.mb85{ margin-bottom: 85px; }
+.mb90{ margin-bottom: 90px; }
+
+
+.mr10{ margin-right: 10px; }
+.mr20{ margin-right: 20px; }
+.mr30{ margin-right: 30px; }
+.mr40{ margin-right: 40px; }
+.mr50{ margin-right: 50px; }
+
+.ml10{ margin-left: 10px; }
+.ml20{ margin-left: 20px; }
+.ml30{ margin-left: 30px; }
+.ml40{ margin-left: 40px; }
+.ml50{ margin-left: 50px; }
+
+/*-----------------------------------------------------------
+padding
+------------------------------------------------------------*/
+.p10b10 { padding:10px 0; overflow:hidden; }
+.p20b20 { padding:20px 0; overflow:hidden; }
+.p30b30 { padding:30px 0; overflow:hidden; }
+.p40b40 { padding:40px 0; overflow:hidden; }
+.p50b50 { padding:50px 0; overflow:hidden; }
+
+.p0b10 { padding: 0 0 10px 0; overflow:hidden; }
+.p0b20 { padding: 0 0 20px 0; overflow:hidden; }
+.p0b30 { padding: 0 0 30px 0; overflow:hidden; }
+.p0b40 { padding: 0 0 40px 0; overflow:hidden; }
+.p0b50 { padding: 0 0 50px 0; overflow:hidden; }
+
+/*-----------------------------------------------------------
+line height
+------------------------------------------------------------*/
+.line14{ line-height: 14px}
+.line16{ line-height: 16px}
+.line18{ line-height: 18px}
+.line20{ line-height: 20px}
+.line22{ line-height: 22px}
+.line24{ line-height: 24px}
+.line26{ line-height: 26px}
+.line28{ line-height: 28px}
+.line30{ line-height: 30px}
+
+/*-----------------------------------------------------------
+FONT Weight
+------------------------------------------------------------*/
+.fwB{font-weight: bold;}
+
+/*-----------------------------------------------------------
+FONT Size
+------------------------------------------------------------*/
+.fz10{ font-size: 10px; }
+.fz11{ font-size: 11px; }
+.fz12{ font-size: 12px; }
+.fz13{ font-size: 13px; }
+.fz14{ font-size: 14px; }
+.fz15{ font-size: 15px; }
+.fz16{ font-size: 16px; }
+.fz17{ font-size: 17px; }
+.fz18{ font-size: 18px; }
+.fz19{ font-size: 19px; }
+.fz20{ font-size: 20px; }
+/*-----------------------------------------------------------
+FONT family
+------------------------------------------------------------*/
+.ffN{font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+.ffM{font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;}
+
+/*-----------------------------------------------------------
+FLOAT
+------------------------------------------------------------*/
+.floatL{
+	float: left;
+	display:inline-block;
+}
+.floatR{
+	float: right;
+	display:inline-block;
+}
+  
+/*-----------------------------------------------------------
+Text-Align
+------------------------------------------------------------*/
+.taL{ text-align: left; }
+.taC{ text-align: center;}
+.taR{ text-align: right;}
+
+
+/* ------------------------------------------------------------------
+	Media screen
+-------------------------------------------------------------------*/
+@media only screen and (min-width:1401px) {
+	
+}
+
+@media only screen and (max-width:1400px) {
+body {
+	width:100%;
+}
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+	
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+/*-----------------------------------------------------------
+Body
+-------------------------------------------------------------*/
+.pcStyle a:hover {
+	text-decoration:none;
+}
+.touchHover,
+.noTapColor,
+button { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+body {
+	margin:0;
+	padding:0;
+	line-height:1.6;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:13px;
+	width:100%;
+	min-width:320px;
+	color:#242424;
+	background-image: url(../../img/top/bg_head01.png);
+}
+
+
+/*-----------------------------------------------------------
+Header
+-------------------------------------------------------------*/
+h1.head{
+	font-size: 10px;
+	text-align: center;
+	padding: 10px 0 7px;
+}
+#headerInner{
+	padding: 16px 0 10px;
+	background: #fff;
+}
+.logo{
+	float: left;
+	margin-left: 2%;
+}
+.headContact{
+	float: right;
+	margin-right: 2%;
+}
+
+
+/*-----------------------------------------------------------
+global Navi
+-------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------
+ Container/Maincontent
+------------------------------------------------------------*/
+div#container{
+}
+div#mainContent{
+}
+
+
+/*-----------------------------------------------------------
+Footer
+------------------------------------------------------------*/

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+.form{
+	font-size: 13px;
+}
+.form input[type="text"] {
+	color: #000;
+	border: 1px solid #8F8F8F;
+	height: 45px;
+	padding: 0 5px;
+	width: 100%;
+	outline: none;
+	line-height: 45px;
+}
+.form textarea{
+	border: 1px solid #8F8F8F;
+	outline: none;
+	width: 100%;
+}
+.form input[type="checkbox"] {
+	-moz-transform: scale(1.50);
+  -webkit-transform: scale(1.50);
+  -o-transform: scale(1.50);
+  transform: scale(1.50);
+	margin-right: 5px;
+}
+
+.form dl dt{
+	margin: 17px 0 7px 0;
+}
+.form dl dt span{
+	color:#E41B5B;
+}
+.w-code input[type="text"]{
+	width: 94%;
+}
+
+.slGroup h4{
+	margin: 12px 0 10px 0;
+}
+.slGroup li{
+	margin-top: 23px;
+	clear: both;
+	overflow: hidden;
+}
+.slGroup li:first-child{
+	margin-top: 0;
+}
+
+	.w-sl{
+		background: #fff url(../../img/top/bg_sl.png) right center no-repeat;
+		-webkit-background-size: 30px;
+		background-size: 30px;
+		color: #000;
+		border: 1px solid #8F8F8F;
+		height: 45px;
+		padding: 11px 5px;
+		width: 80%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.w-sl select{
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		-o-appearance:none;
+		appearance:none;
+		background: none;
+		border: none;
+		width: 100%;
+		outline: none;
+	}
+	.slGroup li span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+		
+#copyright{
+	text-align: center;
+	padding: 30px 0 15px 0;
+	font-size: 11px;
+	color: #3F3F3F;
+}
+form p.test { 
+	position: relative;
+	color: #C1C0BC;
+	}
+form p.test label { 
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	}
+form p.test br {
+	display: none;
+	}
+form p.test01 label { 
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	}	
+form fieldset p.test input,
+form fieldset p.test textarea {
+	display: block;
+	padding: 4px;
+	width: 400px;
+	margin: 0;
+	border: 1px solid;
+	}
+form fieldset p.test label {
+	width: 380px;
+	display: block;
+	margin: 5px 5px 5px 6px;
+	padding: 0;
+	}
+form fieldset p.test textarea {
+	padding: 2px;
+	width: 404px;
+	border: 1px solid;
+	}
+form fieldset p.test textarea,
+form fieldset p.test input {
+	border: solid 1px;
+	}
+form fieldset p.test label {
+	color: #4c4c4c;
+	}
+
+.formError {
+	left: 30% !important;
+}
